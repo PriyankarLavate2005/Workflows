@@ -1,7 +1,10 @@
-name: "Deploy to AWS"
+name: "Deploy to AWS2"
 
 on:
-  workflow_dispatch:
+    push:
+        branches:
+        - main
+        - master
 
 jobs:
   Deploy_to_AWS:
